@@ -52,14 +52,17 @@ html {
 
     .header__repair-text, .header__checkstatus-text {
         display: none;
+        cursor: pointer;
     }
 
     .header__repair {
         margin-left: 20px;
+        cursor: pointer;
     }
 
     .header__checkstatus {
         margin-left: 16px;
+        cursor: pointer;
     }
 
     .content {
@@ -123,6 +126,7 @@ html {
         letter-spacing: -0.2px;
         padding: 8px 16px;
         color: #7E7E82;
+        cursor: pointer;
     }
 
     .menu__menu-item--selected {
@@ -153,6 +157,7 @@ html {
     .expand {
         display: flex;
         align-items: center;
+        cursor: pointer;
     }
 
     .expand__text {
