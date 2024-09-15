@@ -17,17 +17,27 @@
 
 html {
     font-family: "TT Lakes";
+    background: #F8F8F8;
 }
 
 @media (min-width: 320px) {
+    .container {
+        padding: 0 16px;
+    }
+
     .header {
         display: flex;
         align-items: center;
         height: 88px;
         border-bottom: 1px solid #D9FFF5;
+        background: white;
     }
 
     .header__burger, .header__logo {
+        cursor: pointer;
+    }
+
+    .header__logo {
         margin-left: 16px;
     }
 
@@ -44,15 +54,16 @@ html {
     .header__chat,
     .header__profile {
         display: none;
+        cursor: pointer;
     }
 
     .header__repair-checkstatus-blocks {
         display: flex;
+        height: 40px;
     }
 
     .header__repair-text, .header__checkstatus-text {
         display: none;
-        cursor: pointer;
     }
 
     .header__repair {
@@ -65,12 +76,8 @@ html {
         cursor: pointer;
     }
 
-    .content {
-        background-color: #F8F8F8;
-    }
-
     .content__title-block {
-        padding-top: 24px;
+        margin-top: 24px;
         display: flex;
         align-items: center;
     }
@@ -81,6 +88,8 @@ html {
         height: 40px;
         background-color: #41F6D7;
         border-radius: 0 8px 8px 0;
+        position: absolute;
+        left: 0;
     }
 
     .title-block__title {
@@ -88,7 +97,6 @@ html {
         font-size: 28px;
         line-height: 40px;
         letter-spacing: -0.6px;
-        margin-left: 12px;
     }
 
     .content__menu {
@@ -99,6 +107,7 @@ html {
         list-style: none;
         display: flex;
         overflow-x: scroll;
+        margin: 0 -16px;
         padding-left: 16px;
     }
 
@@ -136,14 +145,14 @@ html {
     }
 
     .content__description {
-        margin: 24px 0 40px;
+        margin: 24px 0 35px;
     }
 
     .description__paragraphs {
-        padding: 0 16px;
         font-size: 14px;
         line-height: 18px;
         letter-spacing: 0.2px;
+        color: #1B1C21;
     }
 
     .description__paragraph-last {
@@ -152,6 +161,7 @@ html {
 
     .description__expand {
         margin-top: 16px;
+        width: max-content;
     }
 
     .expand {
@@ -169,6 +179,7 @@ html {
 
     .description__image {
         margin-top: 16px;
+        margin: 16px 0 0 -16px;
     }
 }
 
@@ -177,8 +188,8 @@ html {
 
 
 @media (min-width: 768px) {
-    .header__burger {
-        margin-left: 24px;
+    .container {
+        padding: 0 24px;
     }
 
     .header__divider:nth-of-type(1) {
@@ -195,36 +206,32 @@ html {
         margin-left: 16px;
     }
 
-    .header__checkstatus {
-        margin-right: 40px;
-    }
-
-    .title-block__title {
-        margin-left: 20px;
-    }
-
     .content__menu {
         margin-top: 32px;
     }
 
     .menu__menu-list {
+        margin: 0 -24px;
         padding-left: 24px;
+    }
+
+    .menu__menu-list::before {
+        width: 24px;
     }
 
     .content__description {
         display: flex;
-        margin-top: 32px;
-        margin: 32px 0 35px;
+        margin: 32px 0 40px;
     }
 
     .description__paragraphs {
-        padding: 0 24px;
         line-height: 20px;
+        margin-right: 48px;
     }
 
     .description__paragraph-last {
         display: block;
-        padding-top: 18px;
+        margin-top: 20px;
     }
 
     .description__paragraph-last-span {
@@ -236,8 +243,7 @@ html {
     }
 
     .description__image {
-        margin-top: 0;
-        margin-right: 25px;
+        margin: 0;
         width: 360px;
         height: 208px;
         border-radius: 6px;
@@ -249,8 +255,10 @@ html {
 
 
 @media (min-width: 1120px) {
-    body {
-        background-color: #F8F8F8;
+    .container {
+        width: 1120px;
+        margin: 0 auto;
+        padding: 0 32px;
     }
 
     .header {
@@ -268,15 +276,15 @@ html {
     }
 
     .header__repair-checkstatus-blocks {
-        display: flex;
         margin-left: auto;
         position: relative;
-        top: 45px;
+        top: 63px;
     }
 
     .header__repair-block, .header__checkstatus-block {
         display: flex;
         align-items: center;
+        cursor: pointer;
     }
 
     .header__checkstatus-block {
@@ -291,8 +299,8 @@ html {
         margin-left: 8px;
     }
 
-    .title-block__title {
-        margin-left: 28px;
+    .content__title-block {
+        margin-top: 42px;
     }
 
     .content__menu {
@@ -301,13 +309,15 @@ html {
 
     .menu__menu-list {
         flex-wrap: wrap;
-        overflow-x: hidden;
-        padding-left: 30px;
+        overflow: hidden;
     }
 
     .content__description {
         margin-top: 16px;
-        color: #1B1C21;
+    }
+
+    .description__paragraphs {
+        margin-right: 36px;
     }
 
     .description__paragraph-last-span {
@@ -316,12 +326,10 @@ html {
 
     .description__expand {
         margin-top: 14px;
-        color: #1B1C21;
     }
 
     .description__image {
-        margin-right: 28px;
         width: 531px;
-        height: 306px;
+        height: 307px;
     }
 }
