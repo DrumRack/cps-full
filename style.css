@@ -60,6 +60,7 @@ html {
     .header__repair-checkstatus-blocks {
         display: flex;
         height: 40px;
+        color: #1B1C21;
     }
 
     .header__repair-text, .header__checkstatus-text {
@@ -83,7 +84,6 @@ html {
     }
 
     .title-block__highlight {
-        display: inline-block;
         width: 4px;
         height: 40px;
         background-color: #41F6D7;
@@ -93,7 +93,6 @@ html {
     }
 
     .title-block__title {
-        display: inline-block;
         font-size: 28px;
         line-height: 40px;
         letter-spacing: -0.6px;
@@ -301,6 +300,11 @@ html {
 
     .content__title-block {
         margin-top: 42px;
+        position: relative;
+    }
+
+    .title-block__highlight {
+        left: -32px;
     }
 
     .content__menu {

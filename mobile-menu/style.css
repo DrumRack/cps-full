@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('font/TTLakes/TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url('font/TTLakes/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('font/TTLakes/TTLakes-Medium.woff') format('woff'),
+        url('font/TTLakes/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "TT Lakes";
+    color: #1B1C21;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 100vh;
+    padding: 0 24px;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu__menu-header {
+    height: 86px;
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+}
+
+.menu-header__logo {
+    margin-left: 17px;
+}
+
+.menu-header__search {
+    margin-left: auto;
+}
+
+.mobile-menu__menu-nav {
+    margin-top: 30px;
+}
+
+.menu-nav {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.menu-title-block {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-title-block__highlight {
+    width: 4px;
+    height: 32px;
+    background-color: #41F6D7;
+    border-radius: 0 8px 8px 0;
+    position: absolute;
+    left: 0;
+}
+
+.menu-title-block__title {
+    font-size: inherit;
+    color: #7E7E82;
+    font-weight: normal;
+}
+
+.menu-nav__list {
+    list-style: none;
+}
+
+.menu-nav__item {
+    margin-top: 32px;
+}
+
+.mobile-menu__menu-footer {
+    margin: auto 0 32px;
+}
+
+.menu-footer__call, .menu-footer__chat {
+    margin-right: 16px;
+}
+
+.menu-footer__address-block {
+    margin-top: 16px;
+}
+
+.menu-footer__icons-block {
+    height: 40px;
+}
+
+.menu-footer__address-mail, .menu-footer__address-tel {
+    display: block;
+    color: #1B1C21;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.menu-footer__address-mail {
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin-bottom: 12px;
+}
+
+.menu-footer__address-tel {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    font-weight: bold;
+}
+
+.menu-footer__lang-block {
+    list-style: none;
+    margin-top: 40px;
+}
+
+.menu-footer__lang-item {
+    display: inline-block;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.menu-footer__lang-item--active {
+    color: #7E7E82;
+}
