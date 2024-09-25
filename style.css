@@ -18,6 +18,7 @@
 html {
     font-family: "TT Lakes";
     background: #F8F8F8;
+    color: #1B1C21;
 }
 
 @media (min-width: 320px) {
@@ -29,12 +30,9 @@ html {
         display: flex;
         align-items: center;
         height: 88px;
-        border-bottom: 1px solid #D9FFF5;
+        line-height: 0;
         background: white;
-    }
-
-    .header__burger, .header__logo {
-        cursor: pointer;
+        border-bottom: 1px solid #D9FFF5;
     }
 
     .header__logo {
@@ -54,13 +52,11 @@ html {
     .header__chat,
     .header__profile {
         display: none;
-        cursor: pointer;
     }
 
     .header__repair-checkstatus-blocks {
         display: flex;
         height: 40px;
-        color: #1B1C21;
     }
 
     .header__repair-text, .header__checkstatus-text {
@@ -151,7 +147,6 @@ html {
         font-size: 14px;
         line-height: 18px;
         letter-spacing: 0.2px;
-        color: #1B1C21;
     }
 
     .description__paragraph-last {
