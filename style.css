@@ -54,23 +54,12 @@ html {
         display: none;
     }
 
-    .header__repair-checkstatus-blocks {
-        display: flex;
-        height: 40px;
-    }
-
-    .header__repair-text, .header__checkstatus-text {
-        display: none;
-    }
-
     .header__repair {
         margin-left: 20px;
-        cursor: pointer;
     }
 
     .header__checkstatus {
         margin-left: 16px;
-        cursor: pointer;
     }
 
     .content__title-block {
@@ -269,28 +258,35 @@ html {
         display: none;
     }
 
-    .header__repair-checkstatus-blocks {
-        margin-left: auto;
+    .header__repair, .header__checkstatus {
         position: relative;
         top: 63px;
+        z-index: 1;
+        color: inherit;
+        text-decoration: none;
     }
 
-    .header__repair-block, .header__checkstatus-block {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
+    .header__repair {
+        margin-left: auto;
     }
 
-    .header__checkstatus-block {
+    .header__checkstatus {
         margin-left: 32px;
     }
 
-    .header__repair-text, .header__checkstatus-text {
-        display: inline;
+    .header__repair-icon-container, .header__checkstatus-icon-container {
+        display: flex;
+        align-items: center;
     }
 
-    .header__repair, .header__checkstatus {
-        margin-left: 8px;
+    .header__repair-icon-container::before {
+        content: "Оставить заявку";
+        margin-right: 8px;
+    }
+
+    .header__checkstatus-icon-container::before {
+        content: "Статус ремонта";
+        margin-right: 8px;
     }
 
     .content__title-block {
