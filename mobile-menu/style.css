@@ -140,10 +140,15 @@ html {
 
 .m-footer__lang-item {
     display: inline-block;
-    line-height: 24px;
     margin-right: 7px;
+    line-height: 24px;
 }
 
-.m-footer__lang-item--active {
+.m-footer__lang-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.m-footer__lang-link--active {
     color: #7E7E82;
 }
