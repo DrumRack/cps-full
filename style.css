@@ -66,25 +66,21 @@ html {
         display: none;
     }
 
-    .content__title-block {
+    .content__title {
         margin-top: 24px;
-        display: flex;
-        align-items: center;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -0.6px;
     }
 
-    .title-block__highlight {
+    .content__title::before {
+        content: "";
         width: 4px;
         height: 40px;
         background-color: #41F6D7;
         border-radius: 0 8px 8px 0;
         position: absolute;
         left: 0;
-    }
-
-    .title-block__title {
-        font-size: 28px;
-        line-height: 40px;
-        letter-spacing: -0.6px;
     }
 
     .content__menu {
@@ -266,7 +262,7 @@ html {
         display: flex;
         align-items: center;
         position: relative;
-        top: 63px;
+        top: 62px;
         z-index: 1;
         color: inherit;
         text-decoration: none;
@@ -285,12 +281,12 @@ html {
         margin-right: 8px;
     }
 
-    .content__title-block {
+    .content__title {
         margin-top: 42px;
         position: relative;
     }
 
-    .title-block__highlight {
+    .content__title::before {
         left: -32px;
     }
 
