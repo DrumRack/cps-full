@@ -62,6 +62,10 @@ html {
         margin-left: 16px;
     }
 
+    .header__repair-text, .header__checkstatus-text {
+        display: none;
+    }
+
     .content__title-block {
         margin-top: 24px;
         display: flex;
@@ -259,6 +263,8 @@ html {
     }
 
     .header__repair, .header__checkstatus {
+        display: flex;
+        align-items: center;
         position: relative;
         top: 63px;
         z-index: 1;
@@ -274,18 +280,8 @@ html {
         margin-left: 32px;
     }
 
-    .header__repair-icon-container, .header__checkstatus-icon-container {
-        display: flex;
-        align-items: center;
-    }
-
-    .header__repair-icon-container::before {
-        content: "Оставить заявку";
-        margin-right: 8px;
-    }
-
-    .header__checkstatus-icon-container::before {
-        content: "Статус ремонта";
+    .header__repair-text, .header__checkstatus-text {
+        display: block;
         margin-right: 8px;
     }
 
