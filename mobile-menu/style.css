@@ -39,7 +39,7 @@ html {
     width: 320px;
     height: 100vh;
     padding: 0 24px;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
