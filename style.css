@@ -99,8 +99,8 @@ html {
         content: "";
         position: absolute;
         left: 0;
-        height: 44px;
         width: 16px;
+        height: 44px;
         background-image: linear-gradient(to left, rgba(248, 248, 248, 0) 0%, rgba(248, 248, 248, 1) 100%);
     }
 
@@ -108,8 +108,8 @@ html {
         content: "";
         position: absolute;
         right: 0;
-        height: 44px;
         width: 24px;
+        height: 44px;
         background-image: linear-gradient(to right, rgba(248, 248, 248, 0) 0%, rgba(248, 248, 248, 1) 100%);
     }
 
@@ -155,8 +155,6 @@ html {
 
     .expand__text {
         margin-left: 8px;
-        font-size: 16px;
-        line-height: 24px;
         letter-spacing: -0.2px;
     }
 
