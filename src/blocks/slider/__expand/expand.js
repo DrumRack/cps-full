@@ -1,4 +1,4 @@
-const expand = document.querySelector('.expand')
+const expand = document.querySelector('.slider__expand')
 const hiddenSlides = document.querySelectorAll('.slider__slide:nth-child(n+7)')
 
 expand.onclick = function () {

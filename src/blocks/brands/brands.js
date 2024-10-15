@@ -1,9 +1,15 @@
-const swiper = new Swiper('.services__slider', {
+import Swiper from 'swiper'
+import {Pagination} from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/pagination'
+
+const swiper = new Swiper('.brands__slider', {
     breakpoints: {
         768: {
             enabled: false
         }
     },
+    modules: [Pagination],
     pagination: {
         el: '.slider__pagination'
     },
