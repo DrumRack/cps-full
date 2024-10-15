@@ -1,5 +1,5 @@
 @media (min-width: 320px) {
-    .brands {
+    .repair {
         border-top: 1px solid #D9FFF5;
 
         &__header {
@@ -18,7 +18,7 @@
             left: 0;
             top: 0;
             width: 16px;
-            height: 72px;
+            height: 160px;
             background-image: linear-gradient(to left, rgba(248, 248, 248, 0) 0%, rgba(248, 248, 248, 1) 100%);
             pointer-events: none;
         }
@@ -30,7 +30,7 @@
             right: 0;
             top: 0;
             width: 24px;
-            height: 72px;
+            height: 160px;
             background-image: linear-gradient(to right, rgba(248, 248, 248, 0) 0%, rgba(248, 248, 248, 1) 100%);
             pointer-events: none;
         }
@@ -38,7 +38,7 @@
 }
 
 @media (min-width: 768px) {
-    .brands {    
+    .repair {    
         &__slider {
             margin: 0;
             padding-top: 24px;

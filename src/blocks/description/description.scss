@@ -1,8 +1,12 @@
 @media (min-width: 320px) {
     .description {
         font-size: 14px;
-        line-height: 18px;
+        line-height: 0;
         letter-spacing: 0.2px;
+
+        &__paragraphs {
+            line-height: 18px;
+        }
     
         &__paragraph-last {
             display: none;
@@ -22,10 +26,9 @@
 
 @media (min-width: 768px) {
     .description {
-        line-height: 20px;
-        
         &__paragraphs {
             margin-right: 48px;
+            line-height: 20px;
         }
     
         &__paragraph-last {

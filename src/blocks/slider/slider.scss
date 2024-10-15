@@ -4,7 +4,7 @@
             padding-left: 16px;
         }
     
-        &__slide {
+        &__brands-slide {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -16,11 +16,24 @@
             border: 1px solid #EAEAEA;
             border-radius: 6px;
         }
+
+        &__repair-slide {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 240px;
+            height: 160px;
+            margin-right: 16px;
+            padding: 0 16px;
+            background: #FFF;
+            border: 1px solid #EAEAEA;
+            border-radius: 6px;
+        }
     
         &__pagination {
             margin-top: 16px;
             text-align: center;
-            margin-bottom: 38px;
+            margin-bottom: 24px;
             --swiper-pagination-color: #B5B6BC;
             --swiper-pagination-bullet-size: 12px;
             --swiper-pagination-bullet-inactive-color: #DDD;
@@ -34,27 +47,37 @@
 }
 
 @media (min-width: 768px) {
-    .slider {
+    .slider {  
         &__slide-list {
             padding: 0;
-        }
-    
-        &__slide-list {
             display: grid;
             grid-template-columns: repeat(auto-fill, 224px);
             gap: 16px 24px;
         }
     
-        &__slide {
+        &__brands-slide {
             width: auto;
             margin: 0;
         }
     
-        &__slide:nth-child(n + 7) {
+        &__brands-slide:nth-child(n + 7) {
             display: none;
         }
     
-        &__slide--visible:nth-child(n) {
+        &__brands-slide--visible:nth-child(n) {
+            display: flex;
+        }
+
+        &__repair-slide {
+            width: auto;
+            margin: 0;
+        }
+    
+        &__repair-slide:nth-child(n + 4) {
+            display: none;
+        }
+    
+        &__repair-slide--visible:nth-child(n) {
             display: flex;
         }
     
@@ -73,15 +96,15 @@
             gap: 16px 32px;
         }
     
-        &__slide:nth-child(n) {
+        &__brands-slide:nth-child(n) {
             display: flex;
         }
     
-        &__slide:nth-child(n + 9) {
+        &__brands-slide:nth-child(n + 9) {
             display: none;
         }
     
-        &__slide--visible:nth-child(n) {
+        &__brands-slide--visible:nth-child(n) {
             display: flex;
         }
     }
