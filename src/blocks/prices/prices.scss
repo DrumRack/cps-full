@@ -1,0 +1,144 @@
+@media (min-width: 320px) {
+    .prices {
+        border-top: 1px solid #D9FFF5;
+
+        &__header {
+            background: linear-gradient(to right, #F8F8F8 0%, #FFFFFF 100%);
+            padding: 16px 0;
+        }
+
+        &__slider {
+            margin: 16px -16px 0 -16px;
+        }
+
+        &__slider::before {
+            content: "";
+            position: absolute;
+            z-index: 10;
+            left: 0;
+            top: 0;
+            width: 16px;
+            height: 200px;
+            background-image: linear-gradient(to left, rgba(248, 248, 248, 0) 0%, rgba(248, 248, 248, 1) 100%);
+            pointer-events: none;
+        }
+    
+        &__slider::after {
+            content: "";
+            position: absolute;
+            z-index: 10;
+            right: 0;
+            top: 0;
+            width: 24px;
+            height: 200px;
+            background-image: linear-gradient(to right, rgba(248, 248, 248, 0) 0%, rgba(248, 248, 248, 1) 100%);
+            pointer-events: none;
+        }
+
+        thead {
+            display: none;
+        }
+
+        .col-service,
+        .col-price,
+        .col-deadline {
+            font-size: 14px;
+            line-height: 16px;
+            color: #7E7E82;
+            font-weight: normal;
+            opacity: 0.72;
+        }
+
+        .col-service-text,
+        .col-price-text,
+        .col-deadline-text {
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+            font-weight: normal;
+        }
+
+        .col-service-text {
+            grid-area: service;
+        }
+
+        .col-price-text {
+            grid-area: price;
+        }
+
+        .col-deadline-text {
+            grid-area: deadline;
+        }
+
+        .col-order-text {
+            grid-area: order;
+        }
+
+        th, td {
+            display: block;
+            text-align: left;
+        }
+
+        table a {
+            display: block;
+            line-height: 0;
+        }
+
+        tfoot {
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        &__offer-link {
+            margin-top: 20px;
+            width: 192px;
+        }
+
+        &__offer-link::after {
+            content: " >";
+            font-family: 'Courier New', Courier, monospace;
+            color: #FF3E79;
+            font-weight: bold;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .prices {    
+        &__slider {
+            display: table;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+            padding-top: 24px;
+        }
+    
+        &__slider::before,
+        &__slider::after {
+            background-image: none;
+        }
+
+        thead {
+            display: table-header-group;
+        }
+
+        th {
+            display: table-cell;
+            padding: 31px 16px 16px 16px;
+        }
+
+        .col-price,
+        .col-deadline {
+            padding-left: 0;
+        }
+
+        td {
+            display: table-cell;
+            padding: 23px 0;
+        }
+    
+        tfoot {
+            display: none;
+        }
+    }
+}

@@ -16,7 +16,7 @@ const swiper = new Swiper('.repair__slider', {
     slidesPerView: 'auto'
 })
 
-addEventListener('resize', function () {
+window.addEventListener('resize', function () {
     if (window.matchMedia('(min-width: 768px)').matches) {
         swiper.slideTo(0, {
             animate: false

@@ -17,10 +17,6 @@ module.exports = {
         }),
         new CopyWebpackPlugin({
             patterns: [
-                // {
-                //     from: path.resolve(__dirname, './src/fonts'),
-                //     to: path.resolve(__dirname, './dist/fonts')
-                // },
                 {
                     from: path.resolve(__dirname, './src/img'),
                     to: path.resolve(__dirname, './dist/img')
@@ -45,17 +41,13 @@ module.exports = {
                 test: /\.scss$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
             },
-            // {
-            //     test: /\.(eot|ttf|woff)$/,
-            //     type: 'asset/resource'
-            // }
-            // {
-            //     test: /\.(eot|ttf|woff)$/,
-            //     use: ['file-loader'],
-            //     options: {
-            //         outputPath: 'fonts'
-            //     }
-            // },
+            {
+                test: /\.(eot|ttf|woff)$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: './fonts/[name][ext]'
+                }
+            }
         ]
     }
 }
