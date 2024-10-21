@@ -1,4 +1,4 @@
-@media (min-width: 320px) {
+@media (min-width: $mobile) {
     .description {
         font-size: 14px;
         line-height: 0;
@@ -24,7 +24,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
     .description {
         &__paragraphs {
             margin-right: 48px;
@@ -53,7 +53,7 @@
     }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: $desktop) {
     .description {
         &__paragraphs {
             margin-right: 36px;

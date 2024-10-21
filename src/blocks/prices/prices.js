@@ -16,13 +16,13 @@ const swiper = new Swiper('.prices__slider', {
     slidesPerView: 'auto'
 })
 
-// addEventListener('resize', function () {
-//     if (window.matchMedia('(min-width: 768px)').matches) {
-//         swiper.slideTo(0, {
-//             animate: false
-//         })
-//     }
-// })
+window.addEventListener('resize', function () {
+    if (window.matchMedia('(min-width: 768px)').matches) {
+        swiper.slideTo(0, {
+            animate: false
+        })
+    }
+})
 
 document.addEventListener('DOMContentLoaded', addTH)
 window.addEventListener('resize', addTH)

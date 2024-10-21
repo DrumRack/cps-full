@@ -1,4 +1,4 @@
-@media (min-width: 320px) {
+@media (min-width: $mobile) {
     .prices {
         border-top: 1px solid #D9FFF5;
 
@@ -89,6 +89,10 @@
             margin-bottom: 16px;
         }
 
+        &__notice-block {
+            max-width: 421px;
+        }
+
         &__offer-link {
             margin-top: 20px;
             width: 192px;
@@ -103,8 +107,8 @@
     }
 }
 
-@media (min-width: 768px) {
-    .prices {    
+@media (min-width: $tablet) {
+    .prices {
         &__slider {
             display: table;
             width: 100%;
@@ -124,12 +128,20 @@
 
         th {
             display: table-cell;
+            padding: 16px;
+        }
+
+        thead th {
             padding: 31px 16px 16px 16px;
         }
 
         .col-price,
         .col-deadline {
             padding-left: 0;
+        }
+
+        .col-order-text {
+            padding: 16px 0;
         }
 
         td {
@@ -139,6 +151,23 @@
     
         tfoot {
             display: none;
+        }
+
+        &__notice-block {
+            margin-top: 24px;
+        }
+
+        &__offer-link {
+            margin-top: 16px;
+            width: max-content;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .prices {
+        &__notice-block {
+            margin-top: 32px;
         }
     }
 }

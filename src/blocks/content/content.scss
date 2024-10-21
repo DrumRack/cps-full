@@ -1,4 +1,4 @@
-@media (min-width: 320px) {
+@media (min-width: $mobile) {
     .content {
         &__title {
             margin-top: 24px;
@@ -27,7 +27,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
     .content {
         &__menu {
             margin-top: 32px;
@@ -40,7 +40,7 @@
     }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: $desktop) {
     .content {
         &__title {
             margin-top: 42px;

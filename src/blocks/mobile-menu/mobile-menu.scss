@@ -1,0 +1,52 @@
+@media (min-width: $mobile) {
+    .mobile-menu {
+        display: flex;
+        background: white;
+        flex-direction: column;
+        width: 320px;
+        height: 100vh;
+        padding: 0 24px;
+        position: absolute;
+        top: 0;
+        left: -320px;
+        z-index: 2;
+        box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+        line-height: 0;
+        letter-spacing: -0.2px;
+        transition: left 150ms ease-in;
+
+        &__m-header {
+            height: 86px;
+        }
+
+        &__m-nav {
+            margin-top: 30px;
+        }
+
+        &__m-footer {
+            margin: auto 0 32px;
+        }
+    }
+    
+    .mobile-menu--visible {
+        left: 0;
+    }
+}
+
+@media (min-width: $tablet) {
+    .mobile-menu {
+        height: 1024px;
+    }
+}
+
+@media (min-width: $desktop) {
+    .mobile-menu {
+        position: static;
+        box-shadow: none;
+        height: auto;
+
+        &__m-footer {
+            margin: 240px 0 32px;
+        }
+    }
+}

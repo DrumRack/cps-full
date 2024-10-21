@@ -1,0 +1,26 @@
+@media (min-width: $mobile) {
+    .m-header {
+        display: flex;
+        align-items: center;
+
+        &__logo {
+            margin-left: 17px;
+        }
+        
+        &__search {
+            margin-left: auto;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .m-header {
+        &__close {
+            display: none;
+        }
+
+        &__logo {
+            margin-left: 0;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-@media (min-width: 320px) {
+@media (min-width: $mobile) {
     .menu {
         &__menu-list {
             list-style: none;
@@ -46,7 +46,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
     .menu {
         &__menu-list {
             margin: 0 -24px;
@@ -59,7 +59,7 @@
     }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: $desktop) {
     .menu {
         &__menu-list {
             flex-wrap: wrap;

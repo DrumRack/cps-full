@@ -1,0 +1,39 @@
+@media (min-width: $mobile) {
+    .footer {
+        margin: 40px 0 19px;
+        border-top: 1px solid #D9FFF5;
+        color: #7E7E82;
+        font-weight: 500;
+    
+        &__text {
+            margin-top: 16px;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: $tablet) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        margin: 47px 0 25px;
+
+        &__text {
+            margin-top: 32px;
+            text-align: left;
+        }
+
+        &__text:last-child {
+            width: 213px;
+            text-align: right;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .footer {
+        margin: 50px 0 21px;
+    }
+}
