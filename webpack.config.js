@@ -2,6 +2,7 @@ const path = require('path')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const autoprefixer = require('autoprefixer')
 
 module.exports = {
     context: path.resolve(__dirname, './src'),
@@ -39,7 +40,16 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+                use: [MiniCssExtractPlugin.loader, 'css-loader', {
+                    loader: 'postcss-loader',
+                    options: {
+                        postcssOptions: {
+                            plugins: [
+                                autoprefixer()
+                            ]
+                        }
+                    }
+                }, 'sass-loader']
             },
             {
                 test: /\.(eot|ttf|woff)$/,
