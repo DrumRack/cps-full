@@ -52,10 +52,21 @@ module.exports = {
                 }, 'sass-loader']
             },
             {
-                test: /\.(eot|ttf|woff)$/,
+                test: /\.(?:eot|ttf|woff)$/,
                 type: 'asset/resource',
                 generator: {
                     filename: './fonts/[name][ext]'
+                }
+            },
+            {
+                test: /\.js$/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            ['@babel/preset-env']
+                        ]
+                    }
                 }
             }
         ]
