@@ -1,5 +1,5 @@
 @import "~normalize.css";
-@import "typography.scss";
+@import "fonts", "variables";
 @import "global.scss";
 
 @import "../blocks/flexbox/flexbox.scss";
@@ -18,7 +18,7 @@
 @import "../blocks/link/link.scss";
 @import "../blocks/footer/footer.scss";
 
-@import "../blocks/mobile-menu/mobile-menu.scss";
+@import "../blocks/side-menu/side-menu.scss";
 @import "../blocks/m-header/m-header.scss";
 @import "../blocks/m-nav/m-nav.scss";
 @import "../blocks/m-footer/m-footer.scss";

@@ -19,7 +19,7 @@
             top: 0;
             width: 16px;
             height: 160px;
-            background-image: linear-gradient(to left, rgba(248, 248, 248, 0) 0%, rgba(248, 248, 248, 1) 100%);
+            background-image: var(--gradient-background-left);
             pointer-events: none;
         }
     
@@ -31,7 +31,7 @@
             top: 0;
             width: 24px;
             height: 160px;
-            background-image: linear-gradient(to right, rgba(248, 248, 248, 0) 0%, rgba(248, 248, 248, 1) 100%);
+            background-image: var(--gradient-background-right);
             pointer-events: none;
         }
     }

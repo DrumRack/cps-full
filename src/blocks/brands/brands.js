@@ -10,10 +10,20 @@ const swiper = new Swiper('.brands__slider', {
         }
     },
     modules: [Pagination],
+    on: {
+        reachEnd: () => {
+            document.documentElement.style.setProperty('--gradient-background-right', 'none')
+        },
+        slideChange: () => {
+            if (swiper.activeIndex !== swiper.slides.length) {
+                document.documentElement.style.setProperty('--gradient-background-right', 'linear-gradient(to right, rgba(248, 248, 248, 0) 0%, rgba(248, 248, 248, 1) 100%)')
+            }
+        }
+    },
     pagination: {
         el: '.slider__pagination'
     },
-    slidesPerView: 'auto'
+    slidesPerView: 'auto',
 })
 
 window.addEventListener('resize', function () {

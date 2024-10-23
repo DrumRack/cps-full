@@ -1,8 +1,8 @@
 @media (min-width: $mobile) {
-    .mobile-menu {
+    .side-menu {
         display: flex;
-        background: white;
         flex-direction: column;
+        background: white;
         width: 320px;
         height: 100vh;
         padding: 0 24px;
@@ -15,37 +15,33 @@
         letter-spacing: -0.2px;
         transition: left 150ms ease-in;
 
-        &__m-header {
-            height: 86px;
-        }
-
-        &__m-nav {
+        &__navigation {
             margin-top: 30px;
         }
 
-        &__m-footer {
+        &__footer {
             margin: auto 0 32px;
         }
     }
     
-    .mobile-menu--visible {
+    .side-menu--visible {
         left: 0;
     }
 }
 
 @media (min-width: $tablet) {
-    .mobile-menu {
+    .side-menu {
         height: 1024px;
     }
 }
 
 @media (min-width: $desktop) {
-    .mobile-menu {
+    .side-menu {
         position: static;
         box-shadow: none;
         height: auto;
 
-        &__m-footer {
+        &__footer {
             margin: 240px 0 32px;
         }
     }

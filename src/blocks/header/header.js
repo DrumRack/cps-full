@@ -3,7 +3,7 @@ const messageButton = document.querySelector('.header__chat')
 const callButton = document.querySelector('.header__call')
 
 burgerButton.addEventListener('click', function () {
-    document.querySelector('.mobile-menu').classList.add('mobile-menu--visible')
+    document.querySelector('.side-menu').classList.add('side-menu--visible')
 })
 
 messageButton.addEventListener('click', function () {

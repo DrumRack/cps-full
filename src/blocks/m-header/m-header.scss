@@ -1,6 +1,7 @@
 @media (min-width: $mobile) {
     .m-header {
         display: flex;
+        height: 86px;
         align-items: center;
 
         &__logo {
