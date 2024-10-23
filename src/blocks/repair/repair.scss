@@ -1,6 +1,9 @@
 @media (min-width: $mobile) {
     .repair {
-        border-top: 1px solid #D9FFF5;
+        --gradient-background-before: var(--gradient-background-left);
+        --gradient-background-after: var(--gradient-background-right);
+
+        border-top: var(--border-section);
 
         &__header {
             background: linear-gradient(to right, #F8F8F8 0%, #FFFFFF 100%);
@@ -19,7 +22,7 @@
             top: 0;
             width: 16px;
             height: 160px;
-            background-image: var(--gradient-background-left);
+            background-image: var(--gradient-background-before);
             pointer-events: none;
         }
     
@@ -31,7 +34,7 @@
             top: 0;
             width: 24px;
             height: 160px;
-            background-image: var(--gradient-background-right);
+            background-image: var(--gradient-background-after);
             pointer-events: none;
         }
     }

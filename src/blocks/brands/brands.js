@@ -3,6 +3,8 @@ import {Pagination} from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 
+const brandsSectionStyle = document.querySelector('.brands').style
+
 const swiper = new Swiper('.brands__slider', {
     breakpoints: {
         768: {
@@ -12,11 +14,13 @@ const swiper = new Swiper('.brands__slider', {
     modules: [Pagination],
     on: {
         reachEnd: () => {
-            document.documentElement.style.setProperty('--gradient-background-right', 'none')
+            brandsSectionStyle.setProperty('--gradient-background-after', 'none')
+            brandsSectionStyle.paddingRight = '16px'
         },
         slideChange: () => {
             if (swiper.activeIndex !== swiper.slides.length) {
-                document.documentElement.style.setProperty('--gradient-background-right', 'linear-gradient(to right, rgba(248, 248, 248, 0) 0%, rgba(248, 248, 248, 1) 100%)')
+                brandsSectionStyle.setProperty('--gradient-background-after', 'var(--gradient-background-right)')
+                brandsSectionStyle.paddingRight = 0
             }
         }
     },

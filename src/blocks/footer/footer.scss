@@ -1,7 +1,7 @@
 @media (min-width: $mobile) {
     .footer {
         margin: 40px 0 19px;
-        border-top: 1px solid #D9FFF5;
+        border-top: var(--border-section);
         color: #7E7E82;
         font-weight: 500;
     

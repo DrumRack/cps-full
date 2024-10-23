@@ -1,4 +1,10 @@
 :root {
+    --color-cyan: #41F6D7;
+    --color-cyan-light: #B8FFEC;
+    --color-cyan-pale: #D9FFF5;
+
+    --border-section: 1px solid var(--color-cyan-pale);
+
     --gradient-background-left: linear-gradient(to left, rgba(248, 248, 248, 0) 0%, rgba(248, 248, 248, 1) 100%);
     --gradient-background-right: linear-gradient(to right, rgba(248, 248, 248, 0) 0%, rgba(248, 248, 248, 1) 100%);
 }

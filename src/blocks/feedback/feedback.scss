@@ -9,7 +9,7 @@
         top: 0;
         right: 0;
         z-index: 2;
-        border-left: 1px solid #D9FFF5;
+        border-left: var(--border-section);
         transition: right 150ms ease-in;
 
         &__close {
