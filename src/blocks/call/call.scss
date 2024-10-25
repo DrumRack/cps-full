@@ -1,17 +1,22 @@
 @media (min-width: $mobile) {
     .call {
         display: none;
-        background: white;
         width: 320px;
         height: 100vh;
         padding-top: 24px;
         padding-left: 16px;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         z-index: 2;
+        background: white;
         border-left: var(--border-section);
         transition: right 150ms ease-in;
+
+        &__close {
+            display: inline-block;
+            line-height: 0;
+        }
 
         &__title {
             margin-top: 40px;
@@ -50,7 +55,6 @@
 
         &__notice-link {
             color: #FF3E79;
-            text-decoration: none;
         }
 
         &__submit {

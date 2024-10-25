@@ -2,16 +2,10 @@ $mobile: 320px;
 $tablet: 768px;
 $desktop: 1440px;
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    font-family: "TT Lakes";
-    background: #F8F8F8;
-    color: #1B1C21;
+@media (min-width: $desktop) {
+    .flex-wrapper {
+        display: flex;
+    }
 }
 
 @media (min-width: $mobile) {
@@ -29,7 +23,18 @@ $desktop: 1440px;
 @media (min-width: $desktop) {
     .container {
         width: 1120px;
-        margin: 0 auto;
         padding: 0 32px;
+    }
+}
+
+.concealing-layer {
+    visibility: hidden;
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.96);
+
+    &--active {
+        visibility: visible;
     }
 }

@@ -1,5 +1,8 @@
+const concealingLayer = document.querySelector('.concealing-layer')
 const closeButton =  document.querySelector('.feedback__close')
+const feedbackSection = document.querySelector('.feedback')
 
 closeButton.addEventListener('click', function () {
-    document.querySelector('.feedback').classList.remove('feedback--visible')
+    feedbackSection.classList.remove('feedback--visible')
+    concealingLayer.classList.remove('concealing-layer--active')
 })

@@ -1,0 +1,181 @@
+@media (min-width: $mobile) {
+    .info {
+        border-top: var(--border-section);
+
+        &__title {
+            margin-top: 24px;
+            font-size: 28px;
+            line-height: 40px;
+            letter-spacing: -0.6px;
+
+            &::before {
+                content: "";
+                width: 4px;
+                height: 40px;
+                position: absolute;
+                left: 0;
+                background-color: var(--color-cyan);
+                border-radius: 0 8px 8px 0;
+            }
+        }
+    
+        &__menu {
+            margin-top: 24px;
+
+            &-list {
+                display: flex;
+                overflow-x: scroll;
+                margin: 0 -16px;
+                padding-left: 16px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    width: 16px;
+                    height: 44px;
+                    background-image: var(--gradient-background-left);
+                    pointer-events: none;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    width: 24px;
+                    height: 44px;
+                    background-image: var(--gradient-background-right);
+                    pointer-events: none;
+                }
+            }
+
+            &-item {
+                white-space: nowrap;
+                line-height: 24px;
+                letter-spacing: -0.2px;
+                font-weight: 500;
+                padding: 8px 16px;
+                color: #7E7E82;
+                cursor: pointer;
+
+                &--selected {
+                    border: 2px solid var(--color-cyan-light);
+                    border-radius: 6px;
+                    background-color: white;
+                }
+            }
+        }
+    
+        &__description {
+            margin: 24px 0;
+            font-size: 14px;
+            line-height: 0;
+            letter-spacing: 0.2px;
+
+            &-text {
+                line-height: 18px;
+            }
+
+            &-paragraph-last {
+                display: none;
+            }
+
+            &-expand {
+                margin-top: 16px;
+            }
+
+            &-image {
+                margin: 16px 0 0 -16px;
+            }
+        }
+    }
+}
+
+@media (min-width: $tablet) {
+    .info {
+        &__menu {
+            margin-top: 32px;
+
+            &-list {
+                margin: 0 -24px;
+                padding-left: 24px;
+
+                &::before {
+                    width: 24px;
+                }
+            }
+        }
+    
+        &__description {
+            display: flex;
+            margin: 32px 0 40px;
+
+            &-text {
+                margin-right: 48px;
+                line-height: 20px;
+            }
+
+            &-paragraph-last {
+                display: block;
+                margin-top: 20px;
+                
+                &-span {
+                    display: none;
+                }
+            }
+
+            &-expand {
+                margin-top: 10px;
+            }
+
+            &-image {
+                margin: 0;
+                width: 360px;
+                height: 208px;
+                border-radius: 6px;
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .info {
+        &__title {
+            margin-top: 42px;
+            position: relative;
+
+            &::before {
+                left: -32px;
+            }
+        }
+    
+        &__menu {
+            margin-top: 8px;
+
+            &-list {
+                flex-wrap: wrap;
+            }
+        }
+    
+        &__description {
+            margin-top: 16px;
+
+            &-text {
+                margin-right: 36px;
+            }
+
+            &-paragraph-last-span {
+                display: inline;
+            }
+
+            &-expand {
+                margin-top: 14px;
+            }
+
+            &-image {
+                width: 531px;
+                height: 307px;
+            }
+        }
+    }
+}

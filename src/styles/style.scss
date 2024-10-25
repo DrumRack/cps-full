@@ -1,0 +1,23 @@
+@import "~normalize.css";
+@import
+    "fonts",
+    "variables",
+    "globals",
+    "utils";
+
+@import "../blocks/side-menu/side-menu.scss";
+@import "../blocks/header/header.scss";
+@import "../blocks/info/info.scss";
+@import "../blocks/brands/brands.scss";
+@import "../blocks/slider/slider.scss";
+@import "../blocks/repair/repair.scss";
+@import "../blocks/prices/prices.scss";
+@import "../blocks/notice/notice.scss";
+@import "../blocks/link/link.scss";
+@import "../blocks/footer/footer.scss";
+
+@import "../blocks/expand/expand.scss";
+@import "../blocks/heading/heading.scss";
+
+@import "../blocks/feedback/feedback.scss";
+@import "../blocks/call/call.scss";
