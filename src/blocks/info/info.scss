@@ -24,7 +24,7 @@
 
             &-list {
                 display: flex;
-                overflow-x: scroll;
+                overflow: scroll;
                 margin: 0 -16px;
                 padding-left: 16px;
 
@@ -154,6 +154,7 @@
 
             &-list {
                 flex-wrap: wrap;
+                overflow: hidden;
             }
         }
     

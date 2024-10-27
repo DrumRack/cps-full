@@ -3,7 +3,6 @@ const hiddenBrandsSlides = document.querySelectorAll('.slider__brands-slide:nth-
 
 brandsExpand.onclick = function () {
     if (brandsExpand.children[1].textContent === 'Показать всё') {
-
         for (let i = 0; i < hiddenBrandsSlides.length; i++) {
             hiddenBrandsSlides[i].classList.add('slider__brands-slide--visible')
         }
@@ -12,9 +11,7 @@ brandsExpand.onclick = function () {
         brandsExpand.style.marginBottom = '14px'
         brandsExpand.children[0].src = 'svg/hide.svg'
         brandsExpand.children[1].textContent = 'Скрыть'
-
     } else {
-
         for (let i = 0; i < hiddenBrandsSlides.length; i++) {
             hiddenBrandsSlides[i].classList.remove('slider__brands-slide--visible')
         }
@@ -25,8 +22,6 @@ brandsExpand.onclick = function () {
         brandsExpand.children[1].textContent = 'Показать всё'
     }
 }
-
-
 
 const repairExpand = document.querySelector('#repair-expand')
 const hiddenRepairSlides = document.querySelectorAll('.slider__repair-slide:nth-child(n + 4)')

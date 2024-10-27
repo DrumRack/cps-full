@@ -1,74 +1,7 @@
-@media (min-width: $mobile) {
-    .feedback {
-        display: none;
-        width: 320px;
-        height: 100vh;
-        padding: 24px 16px 75px 16px;
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 2;
-        background: white;
-        border-left: var(--border-section);
-        transition: right 150ms ease-in;
+.feedback {
+    display: none;
+}
 
-        &__close {
-            display: inline-block;
-            line-height: 0;
-        }
-
-        &__title {
-            margin-top: 40px;
-            line-height: 32px;
-            letter-spacing: -0.6px;
-        }
-
-        &__title::before  {
-            content: "";
-            width: 4px;
-            height: 40px;
-            background-color: #41F6D7;
-            border-radius: 0 8px 8px 0;
-            position: absolute;
-            left: 0;
-            transform: translateY(-6px);
-        }
-
-        &__form-name,
-        &__form-tel,
-        &__form-email,
-        &__form-message {
-            width: 100%;
-            margin-top: 16px;
-            padding: 16px 12px;
-            border: 1px solid #EAEAEA;
-            border-radius: 6px;
-            line-height: 24px;
-            letter-spacing: -0.2px;
-            font-weight: 500;
-        }
-    
-        &__form-name {
-            margin-top: 24px;
-        }
-
-        &__notice {
-            margin-top: 16px;
-            color: #7E7E82;
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        &__notice-link {
-            color: #FF3E79;
-        }
-
-        &__submit {
-            margin-top: 18px;
-        }
-    }
-
-    .feedback--visible {
-        display: block;
-    }
+.feedback--visible {
+    display: block;
 }

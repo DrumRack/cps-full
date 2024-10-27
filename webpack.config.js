@@ -49,13 +49,20 @@ module.exports = {
                             ]
                         }
                     }
-                }, 'sass-loader']
+                }, 'resolve-url-loader', 'sass-loader']
             },
             {
                 test: /\.(?:eot|ttf|woff)$/,
                 type: 'asset/resource',
                 generator: {
                     filename: './fonts/[name][ext]'
+                }
+            },
+            {
+                test: /\.svg$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: './svg/[name][ext]'
                 }
             },
             {

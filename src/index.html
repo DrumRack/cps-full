@@ -86,7 +86,7 @@
                                     <div class="expand__text">Читать далее</div>
                                 </div>
                             </div>
-                            <img class="info__description-image description__image" src="img/cps.jpg" alt="Две таблички, висящие на стене, на которых указаны часы работы и логотип компании">
+                            <img class="info__description-image" src="img/cps.jpg" alt="Две таблички, висящие на стене, на которых указаны часы работы и логотип компании">
                         </div>
                     </div>
                 </section>
@@ -216,25 +216,25 @@
             </footer>
         </div>
     </div>
-    <div class="feedback">
-        <a href="#" class="feedback__close"><img src="svg/close.svg" alt=""></a>
-        <h2 class="feedback__title">Обратная связь</h2>
+    <div class="modal call">
+        <a href="#" class="modal__close" id="call-close"><img src="svg/close.svg" alt=""></a>
+        <h2 class="modal__title">Обратная связь</h2>
         <form>
-            <input class="feedback__form-name" type="text" placeholder="Имя">
-            <input class="feedback__form-tel" type="text" placeholder="Телефон">
-            <input class="feedback__form-email" type="text" placeholder="Электронная почта">
-            <textarea class="feedback__form-message" rows="4" placeholder="Сообщение"></textarea>
-            <p class="feedback__notice">Нажимая “отправить”, вы даете согласие на <a href="#" class="feedback__notice-link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="feedback__notice-link">политикой конфиденциальности</a></p>
-            <button  type="submit">Отправить</button>
+            <input class="modal__form-name" type="text" placeholder="Имя">
+            <input class="modal__form-tel" type="tel" placeholder="Телефон">
+            <input class="modal__form-email" type="email" placeholder="Электронная почта">
+            <textarea class="modal__form-message" rows="4" placeholder="Сообщение"></textarea>
+            <p class="modal__notice">Нажимая “отправить”, вы даете согласие на <a href="#" class="modal__notice-link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="modal__notice-link">политикой конфиденциальности</a></p>
+            <button class="modal__submit" type="submit"></button>
         </form>
     </div>
-    <div class="call">
-        <a href="#" class="call__close"><img src="svg/close.svg" alt=""></a>
-        <h2 class="call__title">Заказать звонок</h2>
+    <div class="modal feedback">
+        <a href="#" class="modal__close" id="feedback-close"><img src="svg/close.svg" alt=""></a>
+        <h2 class="modal__title">Заказать звонок</h2>
         <form>
-            <input class="call__form-tel" type="text" placeholder="Телефон">
-            <p class="call__notice">Нажимая “отправить”, вы даете согласие на <a href="#" class="call__notice-link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="call__notice-link">политикой конфиденциальности</a></p>
-            <button  type="submit">Отправить</button>
+            <input class="modal__form-tel" type="tel" placeholder="Телефон">
+            <p class="modal__notice">Нажимая “отправить”, вы даете согласие на <a href="#" class="modal__notice-link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="modal__notice-link">политикой конфиденциальности</a></p>
+            <button class="modal__submit" type="submit"></button>
         </form>
     </div>
 </body>

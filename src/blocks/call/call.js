@@ -1,5 +1,5 @@
 const concealingLayer = document.querySelector('.concealing-layer')
-const closeButton =  document.querySelector('.call__close')
+const closeButton =  document.querySelector('#call-close')
 const callSection = document.querySelector('.call')
 
 closeButton.addEventListener('click', function () {
